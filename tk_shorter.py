@@ -30,4 +30,5 @@ header_after_input.pack(pady=10)
 short_url.pack()
 
 #RUN
-root.mainloop()
+if __name__ == "__main__":
+    root.mainloop()
