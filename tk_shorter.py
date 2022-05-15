@@ -4,7 +4,7 @@ import pyshorteners as sh
 root = tk.Tk()
 
 #WINDOW SETTINGS
-root.title("Сократить ссылку")
+root.title("Shorter URL")
 root.resizable(width=False, height=False)
 root.geometry("600x300")
 
@@ -16,10 +16,10 @@ def shortener():
     btn['bg'] = "#aa0000"
 
 #INTERFACE
-header_before_input = tk.Label(text="Введите ссылку для сокращения",font="Consolas 20")
+header_before_input = tk.Label(text="Enter URL for shorten",font="Consolas 20")
 url = tk.Entry(width=25,font="Consolas 20")
-btn = tk.Button(text="Сократить", command=shortener,font="Consolas 20", bg="#00aa00", fg="#fff")
-header_after_input = tk.Label(text="Готовая ссылка",font="Consolas 20")
+btn = tk.Button(text="Shorten URL", command=shortener,font="Consolas 20", bg="#00aa00", fg="#fff")
+header_after_input = tk.Label(text="Ready link",font="Consolas 20")
 short_url = tk.Text(width=25, height=2,font="Consolas 20")
 
 #PACK
